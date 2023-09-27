@@ -40,7 +40,7 @@ This command pulls the official Redis image from Docker Hub and starts a Redis i
 
 ### Application Usage
 
-![image](https://github.com/abiandreb/RedisClient/assets/26677911/39cccdc1-6329-4918-a27f-b43d30bccc5a)
+            ![image](https://github.com/abiandreb/RedisClient/assets/26677911/144f5cec-1712-4dee-87ec-12f0a0a8879b)
 
 - The application fetches game data either from a Redis cache or an API.
 - Click the "Fetch Data" button to load data from the API and cache it in Redis.
