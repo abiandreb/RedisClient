@@ -12,20 +12,20 @@ Before running this application, ensure you have the following installed on your
 ## Getting Started
 
 ### Clone the Repository
-```
-git clone https://github.com/your-username/redis-client-blazor.git
-cd redis-client-blazor
-```
+    ```
+    git clone https://github.com/your-username/redis-client-blazor.git
+    cd redis-client-blazor
+    ```
 
 ### Run the Application
 
 To run the application locally, open a terminal in the project's root directory and execute the following commands:
 
-```
-dotnet restore
-dotnet build
-dotnet run
-```
+    ```
+    dotnet restore
+    dotnet build
+    dotnet run
+    ```
 
 This will start the application, and you can access it in your web browser at https://localhost:5001.
 
