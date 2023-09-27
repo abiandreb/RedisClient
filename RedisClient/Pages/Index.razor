@@ -1,0 +1,53 @@
+﻿@page "/"
+
+<PageTitle>RedisClient</PageTitle>
+
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+                <h1 class="modal-title fs-5">Redis Client</h1>
+            </div>
+            <div class="modal-body py-0">
+                
+                @if (_games is null)
+                {
+                    <p>Loading...</p>
+                }
+                else
+                {
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th>Platform</th>
+                            <th>Release Year</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var game in _games)
+                        {
+                            <tr>
+                                <td>@game.Id</td>
+                                <td>@game.Title</td>
+                                <td>@game.Genre</td>
+                                <td>@game.Platform</td>
+                                <td>@game.ReleaseYear</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                }
+                <div class="text-center mt-5">
+                    <p class="lead">@Message</p>
+                </div>
+            </div>
+            <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                <button type="button" class="btn btn-lg btn-primary" onclick="@FetchData">Fetch Data</button>
+                <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal" onclick="@ClearCache">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
