@@ -45,7 +45,3 @@ This command pulls the official Redis image from Docker Hub and starts a Redis i
 - The application fetches game data either from a Redis cache or an API.
 - Click the "Fetch Data" button to load data from the API and cache it in Redis.
 - Click the "Clear" button to clear the cached data.
-
-### License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
